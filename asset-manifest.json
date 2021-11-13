@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/%20furniture-ecommerce/static/css/main.8331ac2a.chunk.css",
-    "main.js": "/%20furniture-ecommerce/static/js/main.a0dbae30.chunk.js",
-    "main.js.map": "/%20furniture-ecommerce/static/js/main.a0dbae30.chunk.js.map",
-    "runtime-main.js": "/%20furniture-ecommerce/static/js/runtime-main.949fd796.js",
-    "runtime-main.js.map": "/%20furniture-ecommerce/static/js/runtime-main.949fd796.js.map",
-    "static/css/2.3aa8d13e.chunk.css": "/%20furniture-ecommerce/static/css/2.3aa8d13e.chunk.css",
-    "static/js/2.215894bf.chunk.js": "/%20furniture-ecommerce/static/js/2.215894bf.chunk.js",
-    "static/js/2.215894bf.chunk.js.map": "/%20furniture-ecommerce/static/js/2.215894bf.chunk.js.map",
-    "static/js/3.1a7bb074.chunk.js": "/%20furniture-ecommerce/static/js/3.1a7bb074.chunk.js",
-    "static/js/3.1a7bb074.chunk.js.map": "/%20furniture-ecommerce/static/js/3.1a7bb074.chunk.js.map",
-    "index.html": "/%20furniture-ecommerce/index.html",
-    "static/css/2.3aa8d13e.chunk.css.map": "/%20furniture-ecommerce/static/css/2.3aa8d13e.chunk.css.map",
-    "static/css/main.8331ac2a.chunk.css.map": "/%20furniture-ecommerce/static/css/main.8331ac2a.chunk.css.map",
-    "static/js/2.215894bf.chunk.js.LICENSE.txt": "/%20furniture-ecommerce/static/js/2.215894bf.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/%20furniture-ecommerce/static/media/Gilroy-SemiBold.07b9100a.ttf",
-    "static/media/slick-theme.css": "/%20furniture-ecommerce/static/media/slick.c94f7671.ttf"
+    "main.css": "/furniture-ecommerce/static/css/main.34a77249.chunk.css",
+    "main.js": "/furniture-ecommerce/static/js/main.a0dbae30.chunk.js",
+    "main.js.map": "/furniture-ecommerce/static/js/main.a0dbae30.chunk.js.map",
+    "runtime-main.js": "/furniture-ecommerce/static/js/runtime-main.0789a04b.js",
+    "runtime-main.js.map": "/furniture-ecommerce/static/js/runtime-main.0789a04b.js.map",
+    "static/css/2.bc78490d.chunk.css": "/furniture-ecommerce/static/css/2.bc78490d.chunk.css",
+    "static/js/2.215894bf.chunk.js": "/furniture-ecommerce/static/js/2.215894bf.chunk.js",
+    "static/js/2.215894bf.chunk.js.map": "/furniture-ecommerce/static/js/2.215894bf.chunk.js.map",
+    "static/js/3.1a7bb074.chunk.js": "/furniture-ecommerce/static/js/3.1a7bb074.chunk.js",
+    "static/js/3.1a7bb074.chunk.js.map": "/furniture-ecommerce/static/js/3.1a7bb074.chunk.js.map",
+    "index.html": "/furniture-ecommerce/index.html",
+    "static/css/2.bc78490d.chunk.css.map": "/furniture-ecommerce/static/css/2.bc78490d.chunk.css.map",
+    "static/css/main.34a77249.chunk.css.map": "/furniture-ecommerce/static/css/main.34a77249.chunk.css.map",
+    "static/js/2.215894bf.chunk.js.LICENSE.txt": "/furniture-ecommerce/static/js/2.215894bf.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/furniture-ecommerce/static/media/Gilroy-SemiBold.07b9100a.ttf",
+    "static/media/slick-theme.css": "/furniture-ecommerce/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.949fd796.js",
-    "static/css/2.3aa8d13e.chunk.css",
+    "static/js/runtime-main.0789a04b.js",
+    "static/css/2.bc78490d.chunk.css",
     "static/js/2.215894bf.chunk.js",
-    "static/css/main.8331ac2a.chunk.css",
+    "static/css/main.34a77249.chunk.css",
     "static/js/main.a0dbae30.chunk.js"
   ]
 }
