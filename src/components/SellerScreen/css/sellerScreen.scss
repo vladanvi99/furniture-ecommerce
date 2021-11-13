@@ -1,0 +1,82 @@
+.seller-screen-holder {
+    margin-top: 8rem;
+    .profile-img-name {
+        justify-content: flex-start;
+        gap: 1rem;
+        img {
+            border-radius: 50%;
+            width: 8rem;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #3e3e3e;
+        }
+    }
+    .description {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        color: #6a6a6a;
+    }
+    .seller-product-wrap {
+        justify-content: flex-start;
+        .product-card {
+            max-width: 33.3%;
+        } 
+    }
+    .pagination {
+        display: flex;
+        gap: 0.8rem;
+        margin-top: 4rem;
+        .pagination-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F9F1E7;
+            width: 4rem;
+            height: 4rem;
+            color: #3A3A3A;
+            &:hover {
+                transition: 0.3s;
+                background-color: #E89F71;
+                color: #fff;
+            }
+            &.active {
+                background-color: #E89F71;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .seller-screen-holder {
+        .seller-product-wrap {
+            .product-card {
+                max-width: 50%;
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .seller-screen-holder {
+        flex-direction: column;
+        .col-1 {
+            flex-basis: unset;
+        }
+        .seller-product-wrap {
+            margin-top: 5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .seller-screen-holder {
+        .seller-product-wrap {
+            .product-card {
+                max-width: 400px;
+                margin: auto;
+            } 
+        }
+    }
+}

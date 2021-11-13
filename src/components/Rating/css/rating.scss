@@ -1,0 +1,12 @@
+.rating {
+    span {
+        color: #E89F71;
+        margin: 0.1rem;
+        font-size: 2rem;
+        &.num-reviews {
+            margin-left: 0.6rem;
+            color: #898989;
+            font-size: 1.7rem;
+        }
+    }
+}

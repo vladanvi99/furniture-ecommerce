@@ -1,0 +1,15 @@
+.register-screen-holder {
+    margin-top: 8rem;
+    .go-signin {
+        font-size: 1.8rem;
+        color: #3e3e3e;
+        margin-top: 2rem;
+        a {
+            color: #E89F71;
+            &:hover {
+                transition: 0.3s;
+                color: #6a6a6a;
+            }
+        }
+    }
+}

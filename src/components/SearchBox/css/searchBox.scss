@@ -1,0 +1,38 @@
+.search {
+    padding: 0.4rem 0;
+    height: 4.5rem;
+    .row {
+        height: 100%;
+
+        input {
+            height: 100%;
+            font-size: 1.4rem;
+            color: #3A3A3A;
+            background-color: #fff;
+            border: none;
+            border-radius: 0;
+            min-width: 25rem;
+            font-weight: 400;
+            &::placeholder {
+                opacity: 0.8;
+                color: #616161;
+            }
+            &:focus-visible {
+                border: none;
+                outline: none;
+            }
+        }
+
+        button {
+            height: 100%;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #3A3A3A;
+            border: none;
+            background-color: #fff;
+            font-size: 1.4rem;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.loading-holeder {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #404040;
+    span {
+        font-size: 1.8rem;
+    }
+}
