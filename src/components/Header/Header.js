@@ -32,24 +32,27 @@ const Header = (props) => {
                 <div className="search-item">
                     <Route render={({history}) => <SearchBox history={history} />} />
                 </div>
-                <div onMouseLeave={() => setOpenDropDownProduct(false)} onClick={() => setOpenDropDownProduct(!openDropDownProduct)} className={`dropdown ${openDropDownProduct ? 'open-dropdown' : ''}`}>
+                <div onMouseLeave={() => setOpenDropDownProduct(false)} onClick={() => {
+                        setOpenDropDownProduct(!openDropDownProduct)
+                        console.log(openDropDownProduct)
+                    }} className={`dropdown ${openDropDownProduct ? 'open-dropdown' : ''}`}>
                     <Link to="#">Products <i className="fa fa-caret-down"></i></Link>
                     {categoryLoading ? <div><Loading /></div> : (
                         <ul className="dropdown-content">
                             <li>
-                                <Link to={`/search/category/all/page/${page}`}>All</Link>
+                                <Link onClick={() => setOpenMenu(false)} to={`/search/category/all/page/${page}`}>All</Link>
                             </li>
                             {
                                 categories.map((c) => (
                                     <li key={c}>
-                                        <Link to={`/search/category/${c}/page/${page}`}>{c}</Link>
+                                        <Link onClick={() => setOpenMenu(false)} to={`/search/category/${c}/page/${page}`}>{c}</Link>
                                     </li>
                                 ))
                             }
                         </ul>
                     )}
                 </div>
-                <Link to="/cart">
+                <Link onClick={() => setOpenMenu(false)} to="/cart">
                     Cart
                     {
                         cartItems.length > 0 && (
@@ -66,10 +69,10 @@ const Header = (props) => {
                             <Link to="#">Seller <i className="fa fa-caret-down"></i></Link>
                             <ul className="dropdown-content">
                                 <li>
-                                    <Link to="/productslist/seller">Products</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/productslist/seller">Products</Link>
                                 </li>
                                 <li>
-                                    <Link to="/orderslist/seller">Orders</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/orderslist/seller">Orders</Link>
                                 </li>
                             </ul>
                         </div>
@@ -82,16 +85,16 @@ const Header = (props) => {
                             <Link to="#">Admin <i className="fa fa-caret-down"></i></Link>
                             <ul className="dropdown-content">
                                 <li>
-                                    <Link to="/dashboard">Dashboard</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/dashboard">Dashboard</Link>
                                 </li>
                                 <li>
-                                    <Link to="/productslist">Products</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/productslist">Products</Link>
                                 </li>
                                 <li>
-                                    <Link to="/orderslist">Orders</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/orderslist">Orders</Link>
                                 </li>
                                 <li>
-                                    <Link to="/userslist">Users</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/userslist">Users</Link>
                                 </li>
                             </ul>
                         </div>
@@ -104,19 +107,19 @@ const Header = (props) => {
                             <Link to="#">{userInfo.name} <i className="fa fa-caret-down"></i></Link>
                             <ul className="dropdown-content">
                                 <li>
-                                    <Link to="/profile">Profile</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/profile">Profile</Link>
                                 </li>
                                 <li>
-                                    <Link to="/orderhistory">Order History</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/orderhistory">Order History</Link>
                                 </li>
                                 <li>
-                                    <Link to="/signin" onClick={onSignout}>Sign Out</Link>
+                                    <Link onClick={() => setOpenMenu(false)} to="/signin" onClick={onSignout}>Sign Out</Link>
                                 </li>
                             </ul>
                         </div>
                     )
                     : (
-                        <Link to="/signin">Sign In</Link>
+                        <Link  onClick={() => setOpenMenu(false)} to="/signin">Sign In</Link>
                     )
                 }
             </nav>

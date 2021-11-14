@@ -5,6 +5,7 @@ import { addToCart, removeFromCart } from '../../redux/actions/cartActions';
 import './css/cartScreen.scss';
 
 const CartScreen = (props) => {
+    const page = 1;
     const cart = useSelector(state => state.cart);
     const {cartItems, error} = cart;
     const productId = props.match.params.id;
@@ -28,7 +29,7 @@ const CartScreen = (props) => {
                 {error && <div>{error}</div>}
                 {!cartItems.length > 0 ? (
                     <p className="empty-cart">
-                        Cart is Empty, <Link to="/">Go Shopping</Link>
+                        Cart is Empty, <Link to={`/search/name/page/${page}`}>Go Shopping</Link>
                     </p>
                 ) : (
                     <ul className="cart-screen-products-holder">

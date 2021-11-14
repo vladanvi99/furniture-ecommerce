@@ -124,7 +124,7 @@ header {
             }
         
             &:hover .dropdown-content {
-                display: block;
+                display: none;
             }
             &.open-dropdown .dropdown-content {
                 display: block;

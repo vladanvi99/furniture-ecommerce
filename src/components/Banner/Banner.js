@@ -34,6 +34,7 @@ const SamplePrevArrow = (props) => {
 }
 
 const Banner = ({props}) => {
+    const page = 1;
     const productTopCarousel = useSelector(state => state.productTopCarousel);
     const {loading: carouselLoading, topProductsCarousel} = productTopCarousel;
     const dispatch = useDispatch();
@@ -80,7 +81,7 @@ const Banner = ({props}) => {
         ]
     };
     const onShop = () => {
-        props.history.push('/search/name')
+        props.history.push(`/search/name/page/${page}`)
     }
     return (
         <div className="banner">
